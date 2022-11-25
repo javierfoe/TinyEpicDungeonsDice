@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-direction: row; height: 100%; width: 100%;">
+        <ui:Button text="-" display-tooltip-when-elided="true" name="Decrease" style="height: auto; width: 25%; font-size: 50px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+        <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="Label" style="width: 50%; height: auto; position: relative; align-items: stretch; -unity-text-align: middle-center; font-size: 50px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+        <ui:Button text="+" display-tooltip-when-elided="true" name="Increase" style="width: 25%; font-size: 50px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

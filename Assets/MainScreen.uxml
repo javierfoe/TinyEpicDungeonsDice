@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="Dice" src="project://database/Assets/Dice.uxml?fileID=9197481963319205126&amp;guid=f4d4f2dfca709ca4d880c6e2eeba8f58&amp;type=3#Dice" />
+    <ui:Template name="ModifyNumber" src="project://database/Assets/ModifyNumber.uxml?fileID=9197481963319205126&amp;guid=83fc41a1970e8d349aad1f31bd796fbe&amp;type=3#ModifyNumber" />
+    <ui:VisualElement name="DiceAmount" style="flex-direction: row; height: 20%; width: 100%;">
+        <ui:Instance template="Dice" name="Dice1" style="width: 33.33333%; height: auto;" />
+        <ui:Instance template="Dice" name="Dice2" focusable="false" style="width: 33.33333%;" />
+        <ui:Instance template="Dice" name="Dice3" style="width: 33.33333%;" />
+    </ui:VisualElement>
+    <ui:Instance template="ModifyNumber" name="Modifier" style="height: 30%;" />
+    <ui:Instance template="ModifyNumber" name="SkillCheck" style="height: 30%; display: flex;" />
+    <ui:VisualElement name="Attack" style="height: 40%; display: none;">
+        <ui:Instance template="ModifyNumber" name="Defense" style="height: 50%;" />
+        <ui:Instance template="ModifyNumber" name="Hits" style="height: 50%;" />
+    </ui:VisualElement>
+    <ui:RadioButtonGroup value="-1" style="position: relative; bottom: initial; flex-direction: row; width: auto; height: 5%;">
+        <ui:RadioButton label="Skill Check" value="true" name="SkillCheck" focusable="false" style="width: 25%; height: auto; -unity-text-align: middle-left; display: flex; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; font-size: 15px;" />
+        <ui:Button text="Reset" display-tooltip-when-elided="true" name="Reset" style="width: 50%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; font-size: 15px;" />
+        <ui:RadioButton label="Attack" name="Attack" focusable="false" style="width: 25%; height: auto; -unity-text-align: middle-left; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; flex-direction: row; font-size: 15px;" />
+    </ui:RadioButtonGroup>
+    <ui:Label tabindex="-1" text="100%" display-tooltip-when-elided="true" name="Result" style="height: 15%; -unity-text-align: middle-center; font-size: 50px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; position: relative; left: auto; top: auto; right: auto; bottom: auto;" />
+</ui:UXML>
